@@ -1,6 +1,5 @@
 import {
   faFacebook,
-  faGgCircle,
   faInstagram,
   faLinkedin,
   faPinterest,
@@ -8,19 +7,11 @@ import {
   faTelegram,
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope, faHeart } from "@fortawesome/free-regular-svg-icons";
 import {
-  faEnvelope,
-  faHeart,
-  faTimesCircle,
-} from "@fortawesome/free-regular-svg-icons";
-import {
-  faBus,
-  faKey,
-  faDiamond,
   faPlus,
   faLocation,
   faPhone,
-  faShop,
   faCartShopping,
   faSearch,
   faMinus,
@@ -292,7 +283,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="border mb-20 md:mb-0 px-4 text-center py-3 ">
+      <div className=" mb-20 md:mb-0 px-4 text-center py-3 ">
         <p>
           copyright &copy; 2024{" "}
           <span className="text-blue-400">5 star beds ltd</span> all right
@@ -300,7 +291,7 @@ const Footer = () => {
           <span className="text-gray-600">ottoman beds</span>
         </p>
       </div>
-      <div className="md:hidden flex justify-between items-center px-3 bg-white fixed bottom-0 h-20 w-full border-2 border-green-500">
+      <div className="md:hidden flex justify-between items-center px-3 bg-white fixed bottom-0 h-20 w-full ">
         <div className="">
           <Link to="/Shop">
             {
@@ -317,7 +308,7 @@ const Footer = () => {
             }
           </Link>
         </div>
-        <div className="block h-12 px-2 border relative">
+        <div className="block h-12 px-2  relative">
           <Link>
             <FontAwesomeIcon icon={faHeart} size="xl" className=" mt-4" />
             <span className=" px-1  absolute top-0  right-0 rounded-full  bg-black text-white   ">
@@ -325,7 +316,7 @@ const Footer = () => {
             </span>
           </Link>
         </div>
-        <div className="h-12 px-2  border relative">
+        <div className="h-12 px-2   relative">
           <Link>
             <FontAwesomeIcon
               icon={faCartShopping}

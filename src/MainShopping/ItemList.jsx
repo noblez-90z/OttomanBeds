@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 import { selectItems } from "./itemSlice";
@@ -8,14 +8,14 @@ import { Link } from "react-router-dom";
 import { faHeart } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const ItemList = ({ addToCart }) => {
+const ItemList = () => {
   const items = useSelector(selectItems); // Use the selector to access all items
   const dispatch = useDispatch();
 
   const [hoveredProductId, setHoveredProductId] = useState(null);
 
   return (
-    <div className="border-2 border-red-500">
+    <div className="">
       <div className="text-center my-4">
         <div className="flex gap-4 justify-center items-center py-3">
           <span className="w-5 h-[2px] bg-gray-500"></span>
@@ -56,7 +56,7 @@ const ItemList = ({ addToCart }) => {
                     className="object-fit object-center w-full h-full rounded"
                   />
 
-                  <div className="border  ">
+                  <div className="  ">
                     <Link>
                       <FontAwesomeIcon
                         icon={faHeart}
@@ -66,7 +66,7 @@ const ItemList = ({ addToCart }) => {
                     </Link>
                   </div>
                 </div>
-                <button className="py-2 px-1 md:px-6 border block mx-auto my-2 rounded-full shadow-lg text-white bg-blue-600 capitalize">
+                <button className="py-2 px-1 md:px-6  block mx-auto my-2 rounded-full shadow-lg text-white bg-blue-600 capitalize">
                   {item.btn}
                 </button>
                 <div className="">

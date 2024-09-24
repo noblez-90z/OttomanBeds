@@ -11,7 +11,7 @@ const Collection = () => {
         <h1 className="font-bold text-3xl">collections</h1>
         <span className="border w-full"></span>
       </div>
-      <div className="h-[790px] md:h-[500px] border-2 border-blue-500 block md:flex justify-center items-start gap-4 py-4 capitalize">
+      <div className="h-[790px] md:h-[500px]  block md:flex justify-center items-start gap-4 py-4 capitalize">
         <div className="h-[500px] md:h-full   overflow-hidden">
           <div className="w-full md:w-[500px] h-[200px]  flex justify-center items-end bg-[url('./assets/OttomanSideOpeningBaseopenviewinside.webp')] bg-center bg-cover bg-no-repeat  cursor-pointer hover:scale-110 transform transition-transform duration-500">
             <div className="py-3 px-4 bg-white text-black  font-bold mb-3 ">
